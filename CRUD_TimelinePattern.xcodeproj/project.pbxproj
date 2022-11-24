@@ -14,6 +14,7 @@
 		43108853292E69F100BF0DAB /* CRUD_TimelinePatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43108852292E69F100BF0DAB /* CRUD_TimelinePatternTests.swift */; };
 		4310885D292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310885C292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift */; };
 		4310885F292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310885E292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift */; };
+		4310886C292F90E100BF0DAB /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310886B292F90E100BF0DAB /* TimelineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		43108858292E69F100BF0DAB /* CRUD_TimelinePatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRUD_TimelinePatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4310885C292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD_TimelinePatternUITests.swift; sourceTree = "<group>"; };
 		4310885E292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD_TimelinePatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4310886B292F90E100BF0DAB /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				43108843292E69EF00BF0DAB /* ContentView.swift */,
 				43108845292E69F100BF0DAB /* Assets.xcassets */,
 				43108847292E69F100BF0DAB /* Preview Content */,
+				4310886B292F90E100BF0DAB /* TimelineView.swift */,
 			);
 			path = CRUD_TimelinePattern;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43108844292E69EF00BF0DAB /* ContentView.swift in Sources */,
+				4310886C292F90E100BF0DAB /* TimelineView.swift in Sources */,
 				43108842292E69EF00BF0DAB /* CRUD_TimelinePatternApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
