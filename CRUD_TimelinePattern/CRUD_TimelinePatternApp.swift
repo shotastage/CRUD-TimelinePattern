@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct CRUD_TimelinePatternApp: App {
     var body: some Scene {

@@ -15,6 +15,9 @@
 		4310885D292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310885C292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift */; };
 		4310885F292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310885E292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift */; };
 		4310886C292F90E100BF0DAB /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310886B292F90E100BF0DAB /* TimelineView.swift */; };
+		4310886E292FAF7E00BF0DAB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310886D292FAF7E00BF0DAB /* TabBarView.swift */; };
+		43108871292FB10000BF0DAB /* GathredScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43108870292FB10000BF0DAB /* GathredScreens.swift */; };
+		43E5FA6A293DF34F00FA7404 /* CoreOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = 43E5FA69293DF34F00FA7404 /* CoreOverlay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		4310885C292E69F100BF0DAB /* CRUD_TimelinePatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD_TimelinePatternUITests.swift; sourceTree = "<group>"; };
 		4310885E292E69F100BF0DAB /* CRUD_TimelinePatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD_TimelinePatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4310886B292F90E100BF0DAB /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		4310886D292FAF7E00BF0DAB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		43108870292FB10000BF0DAB /* GathredScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GathredScreens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E5FA6A293DF34F00FA7404 /* CoreOverlay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +102,13 @@
 		43108840292E69EF00BF0DAB /* CRUD_TimelinePattern */ = {
 			isa = PBXGroup;
 			children = (
+				4310886F292FB0F200BF0DAB /* Screens */,
 				43108841292E69EF00BF0DAB /* CRUD_TimelinePatternApp.swift */,
 				43108843292E69EF00BF0DAB /* ContentView.swift */,
 				43108845292E69F100BF0DAB /* Assets.xcassets */,
 				43108847292E69F100BF0DAB /* Preview Content */,
 				4310886B292F90E100BF0DAB /* TimelineView.swift */,
+				4310886D292FAF7E00BF0DAB /* TabBarView.swift */,
 			);
 			path = CRUD_TimelinePattern;
 			sourceTree = "<group>";
@@ -130,6 +138,14 @@
 			path = CRUD_TimelinePatternUITests;
 			sourceTree = "<group>";
 		};
+		4310886F292FB0F200BF0DAB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				43108870292FB10000BF0DAB /* GathredScreens.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +162,9 @@
 			dependencies = (
 			);
 			name = CRUD_TimelinePattern;
+			packageProductDependencies = (
+				43E5FA69293DF34F00FA7404 /* CoreOverlay */,
+			);
 			productName = CRUD_TimelinePattern;
 			productReference = 4310883E292E69EF00BF0DAB /* CRUD_TimelinePattern.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 43108835292E69EF00BF0DAB;
+			packageReferences = (
+				43E5FA68293DF34F00FA7404 /* XCRemoteSwiftPackageReference "CoreOverlay" */,
+			);
 			productRefGroup = 4310883F292E69EF00BF0DAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43108844292E69EF00BF0DAB /* ContentView.swift in Sources */,
+				43108871292FB10000BF0DAB /* GathredScreens.swift in Sources */,
 				4310886C292F90E100BF0DAB /* TimelineView.swift in Sources */,
+				4310886E292FAF7E00BF0DAB /* TabBarView.swift in Sources */,
 				43108842292E69EF00BF0DAB /* CRUD_TimelinePatternApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43E5FA68293DF34F00FA7404 /* XCRemoteSwiftPackageReference "CoreOverlay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shotastage/CoreOverlay.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43E5FA69293DF34F00FA7404 /* CoreOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E5FA68293DF34F00FA7404 /* XCRemoteSwiftPackageReference "CoreOverlay" */;
+			productName = CoreOverlay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43108836292E69EF00BF0DAB /* Project object */;
 }
